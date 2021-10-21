@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@mb: hsl(218, 28%, 13%);
+@fb: hsl(216, 53%, 9%);
+@eb: hsl(217, 28%, 15%);
+@ab: hsl(219, 30%, 18%);
+////////////////////////////////////////////////constants//////////////////////////////////////////
+a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+.button {
+  padding: 1rem 5rem;
+  border-radius: 2rem;
+  background: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  a {
+    color: white;
+  }
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+body {
+  background-color: @mb;
+  font-size: 14px;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: Open Sans;
+}
+////////////////////////////////////////////////nav//////////////////////////////////////////
+header {
+  font-family: Raleway, sans-serif;
+  background-color: @eb;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    img {
+      width: 9rem;
+      height: fit-content;
+    }
+    ul {
+      width: 20rem;
+      min-width: 20rem;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+@media screen and (max-width: 848px) {
+  header {
+    nav {
+      padding: 1rem 0rem;
+      ul {
+        min-width: 10rem;
+      }
+      img {
+        width: 5rem;
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+////////////////////////////////////////////////b1//////////////////////////////////////////
+.b1 {
+  font-family: Raleway, sans-serif;
+  background-color: @eb;
+  background-image: url(./images/bg-curvy-desktop.svg);
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  h1 {
+    margin: 0;
+    width: 60%;
+    font-weight: 700;
+  }
+  img {
+    width: 40%;
+  }
+  p {
+    width: 60%;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .button {
+    a {
+      color: white;
+    }
+  }
+}
+@media screen and (max-width: 848px) {
+  .b1 {
+    background-image: url(./images/bg-curvy-mobile.svg);
+    height: initial;
+    img {
+      width: 60%;
+    }
+  }
+}
+////////////////////////////////////////////////b2//////////////////////////////////////////
+.b2 {
+  display: grid;
+  place-items: center;
+  width: 70%;
+  margin: 5rem auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5rem;
+  .c {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    font-family: Open Sans;
+    text-align: center;
+    gap: 2rem;
+    h2 {
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+}
+@media screen and (max-width: 848px) {
+  .b2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+////////////////////////////////////////////////b3//////////////////////////////////////////
+.b3 {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+  img {
+    width: 40%;
+  }
+  div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-family: Open Sans;
+    gap: 0.5rem;
+    h1 {
+      font-weight: 700;
+      font-size: 2rem;
+    }
+    a {
+      color: hsl(176, 68%, 64%);
+      width: max-content;
+      margin-top: 1rem;
+      border-bottom: 1px solid hsl(176, 68%, 64%);
+      display: flex;
+      align-items: center;
+      span {
+        display: inline-block;
+        background-image: url(./images/icon-arrow.svg);
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+    p {
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .b3 {
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 100%;
+    img {
+      width: 90%;
+    }
+    div {
+      margin-top: 2rem;
+      width: 85%;
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+////////////////////////////////////////////////b4//////////////////////////////////////////
+.b4 {
+  display: flex;
+  width: 90%;
+  align-items: flex-end;
+  margin: 5rem auto;
+  gap: 2rem;
+  .first {
+    position: relative;
+    #quote {
+      width: 3rem;
+      position: absolute;
+      top: -2rem;
+      left: -1.5rem;
+      z-index: -1;
+      height: min-content;
+    }
+  }
+  .card {
+    display: flex;
+    width: 30%;
+    padding: 2rem 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    background-color: @ab;
+    p {
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 2rem;
+    }
+    .small {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      img {
+        width: 2.5rem;
+        height: min-content;
+        flex-direction: row;
+        border-radius: 50%;
+      }
+
+      div {
+        h2 {
+          font-size: 1rem;
+          margin: 0;
+        }
+        p {
+          margin: 0;
+          font-size: 14px;
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 848px) {
+  .b4 {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    .card {
+      width: 90%;
+    }
+    .first {
+      #quote {
+        left: 0rem;
+      }
+    }
+  }
+}
+////////////////////////////////////////////////b5//////////////////////////////////////////
+.b5 {
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+  width: 60%;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 3rem 0;
+  text-align: center;
+  // border: 1px solid black;
+  background-color: @ab;
+  // margin: 5rem;
+  div {
+    p {
+      width: 70%;
+      text-align: center;
+      margin: 1rem auto;
+    }
+  }
+  .email {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 1.5rem;
+    input {
+      width: 50%;
+      border-radius: 5rem;
+      padding: 1.25rem 5%;
+    }
+    .button {
+      padding: 1.25rem 7.5%;
+    }
+  }
+}
+@media screen and (max-width: 848px) {
+  .b5 {
+    width: 90%;
+    .email {
+      flex-direction: column;
+      input {
+        width: 90%;
+        padding: 1.25rem 5%;
+      }
+    }
+  }
+}

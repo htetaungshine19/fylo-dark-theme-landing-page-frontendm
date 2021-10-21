@@ -1,0 +1,316 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v20/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v20/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf) format('truetype');
+}
+a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+.button {
+  padding: 1rem 5rem;
+  border-radius: 2rem;
+  background: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+.button a {
+  color: white;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+body {
+  background-color: hsl(218, 28%, 13%);
+  font-size: 14px;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: Open Sans;
+}
+header {
+  font-family: Raleway, sans-serif;
+  background-color: hsl(217, 28%, 15%);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+header nav img {
+  width: 9rem;
+  height: fit-content;
+}
+header nav ul {
+  width: 20rem;
+  min-width: 20rem;
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 848px) {
+  header nav {
+    padding: 1rem 0rem;
+  }
+  header nav ul {
+    min-width: 10rem;
+  }
+  header nav img {
+    width: 5rem;
+    padding-left: 1rem;
+  }
+}
+.b1 {
+  font-family: Raleway, sans-serif;
+  background-color: hsl(217, 28%, 15%);
+  background-image: url(images/bg-curvy-desktop.svg);
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+.b1 h1 {
+  margin: 0;
+  width: 60%;
+  font-weight: 700;
+}
+.b1 img {
+  width: 40%;
+}
+.b1 p {
+  width: 60%;
+  color: rgba(255, 255, 255, 0.9);
+}
+.b1 .button a {
+  color: white;
+}
+@media screen and (max-width: 848px) {
+  .b1 {
+    background-image: url(images/bg-curvy-mobile.svg);
+    height: initial;
+  }
+  .b1 img {
+    width: 60%;
+  }
+}
+.b2 {
+  display: grid;
+  place-items: center;
+  width: 70%;
+  margin: 5rem auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5rem;
+}
+.b2 .c {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  font-family: Open Sans;
+  text-align: center;
+  gap: 2rem;
+}
+.b2 .c h2 {
+  font-weight: 700;
+  margin: 0;
+}
+@media screen and (max-width: 848px) {
+  .b2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.b3 {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.b3 img {
+  width: 40%;
+}
+.b3 div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  font-family: Open Sans;
+  gap: 0.5rem;
+}
+.b3 div h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.b3 div a {
+  color: hsl(176, 68%, 64%);
+  width: max-content;
+  margin-top: 1rem;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  display: flex;
+  align-items: center;
+}
+.b3 div a span {
+  display: inline-block;
+  background-image: url(images/icon-arrow.svg);
+  width: 1rem;
+  height: 1rem;
+}
+.b3 div p {
+  color: rgba(255, 255, 255, 0.9);
+}
+@media screen and (max-width: 768px) {
+  .b3 {
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 100%;
+  }
+  .b3 img {
+    width: 90%;
+  }
+  .b3 div {
+    margin-top: 2rem;
+    width: 85%;
+  }
+  .b3 div h1 {
+    font-size: 1.5rem;
+  }
+}
+.b4 {
+  display: flex;
+  width: 90%;
+  align-items: flex-end;
+  margin: 5rem auto;
+  gap: 2rem;
+}
+.b4 .first {
+  position: relative;
+}
+.b4 .first #quote {
+  width: 3rem;
+  position: absolute;
+  top: -2rem;
+  left: -1.5rem;
+  z-index: -1;
+  height: min-content;
+}
+.b4 .card {
+  display: flex;
+  width: 30%;
+  padding: 2rem 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(219, 30%, 18%);
+}
+.b4 .card p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+.b4 .card .small {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.b4 .card .small img {
+  width: 2.5rem;
+  height: min-content;
+  flex-direction: row;
+  border-radius: 50%;
+}
+.b4 .card .small div h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+.b4 .card .small div p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 848px) {
+  .b4 {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .b4 .card {
+    width: 90%;
+  }
+  .b4 .first #quote {
+    left: 0rem;
+  }
+}
+.b5 {
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+  width: 60%;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 3rem 0;
+  text-align: center;
+  background-color: hsl(219, 30%, 18%);
+}
+.b5 div p {
+  width: 70%;
+  text-align: center;
+  margin: 1rem auto;
+}
+.b5 .email {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.b5 .email input {
+  width: 50%;
+  border-radius: 5rem;
+  padding: 1.25rem 5%;
+}
+.b5 .email .button {
+  padding: 1.25rem 7.5%;
+}
+@media screen and (max-width: 848px) {
+  .b5 {
+    width: 90%;
+  }
+  .b5 .email {
+    flex-direction: column;
+  }
+  .b5 .email input {
+    width: 90%;
+    padding: 1.25rem 5%;
+  }
+}
